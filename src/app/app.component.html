@@ -1,0 +1,16 @@
+<h1>
+  {{title}}
+</h1>
+
+<table>
+ <th>Index</th> 
+ <th>Name</th>
+ <th>Contact</th>
+ <th>Address</th>
+ <tr *ngFor="let emp of employees; let i=index" appEvents>
+  <td>{{i}}</td>
+  <td>{{emp.name}}</td>
+  <td>{{emp.contact}}</td>
+  <td>{{emp.address}}</td>
+ </tr>
+</table>
